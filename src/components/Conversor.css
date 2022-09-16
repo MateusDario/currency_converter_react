@@ -1,0 +1,31 @@
+.full {
+    width: 40%;
+    margin: 2em auto;
+    background-color: #394049;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+.botao {
+    border-radius: 7px;
+    width: 50%;
+    margin-left: 22%;
+    cursor: pointer;
+  }
+  .botao:hover{
+    background-color: aqua;
+  }
+h1{
+    display: flex;
+    margin-left: 30%;
+}
+.textozin{
+    width: 49%;
+    margin-left: 22%;
+    border-radius: 7px;
+}
+h2{
+    display: flex;
+    margin-left: 40%;
+}
