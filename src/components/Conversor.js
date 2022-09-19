@@ -15,8 +15,12 @@ export default class Conversor extends Component {
     converter(){
         
             let cotacao = 5.25;
-            let moedaB_valor = (parseFloat(this.state.moedaA_valor) * cotacao).toFixed(2)
+            let moedaB_valor = (parseFloat(this.state.moedaA_valor) * cotacao).toFixed(2).replace('.', ',').replace(/\d{3}(?=(\d{3})*,)/g, function(s) {
+                return '.' + s
+            })
             
+            
+        
             this.setState({moedaB_valor})
     }
 
